@@ -35,8 +35,6 @@ const nextConfig = await loadConfig(root, opts.projectDirectory);
  *
  * We restore the user's Next Config at the end of the build, after the config file has been
  * copied over to the output directory, so that the user's original code is not modified.
- * The override and its validation run inside the try block so that the restore in the
- * finally block also covers a failure in either of them.
  *
  * If the app does not have a next.config.[js|mjs|ts|mts] file in the first place,
  * then can skip config override.
