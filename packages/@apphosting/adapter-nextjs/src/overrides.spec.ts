@@ -349,7 +349,7 @@ describe("next config overrides", () => {
     );
   });
 
-  it("should leave the original config in place when the override fails", async () => {
+  it("should restore the original config when the override fails", async () => {
     const { overrideNextConfig } = await importOverrides;
     const originalConfig = `module.exports = { /* config options here */ }`;
 
